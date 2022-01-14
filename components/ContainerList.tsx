@@ -113,7 +113,7 @@ const ContainerList = () => {
       </div>
 
       <div>
-        <div className={`${!data && "flex items-center justify-center"}`}>
+        <div>
           {data ? (
             (filteredData as Todo[]).map((item, index) => {
               return (
@@ -126,7 +126,15 @@ const ContainerList = () => {
               );
             })
           ) : (
-            <ReactLoading type="spin" color="#000" height={20} width={20} />
+            <div className="bg-slate-400 py-8 w-full flex items-center justify-center">
+              <ReactLoading
+                className=""
+                type="spin"
+                color="#000"
+                height={20}
+                width={20}
+              />
+            </div>
           )}
         </div>
         <div className="flex items-center justify-between  sm:flex-row flex-col sm:mt-8">
