@@ -32,7 +32,9 @@ const Home: NextPage = () => {
             <ContainerList />
           </div>
 
-          <p className="text-center mt-8 py-4">Drag and drop to reorder list</p>
+          <p className="text-center mt-8 py-4">
+            Drag and drop to reorder list (desktop Only)
+          </p>
         </div>
       </div>
     </>
